@@ -1,2 +1,2 @@
 # Joelin0330.github.io
-welcome to my web
+Welcome to my website!
