@@ -3,25 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Website</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Joe | Personal Website</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
+
 <body>
-    <header class="header-main">
-        <div class="header-content">
-            <h1 class="animated-text">Hi I'm Joe. Welcome to my website!</h1>
+
+    <!-- ===== Hero Section with Animation ===== -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1 class="animated-loop">Hi I'm Joe. Welcome to my website!</h1>
+            <p class="hero-sub">Data Analytics • Consulting • Machine Learning</p>
         </div>
     </header>
-    <nav class="nav-main">
+    
+
+    <!-- ===== Navigation ===== -->
+    <nav class="nav-bar">
         <ul>
             <li><a href="#about">ABOUT ME</a></li>
             <li><a href="#experience">EXPERIENCE</a></li>
@@ -29,451 +29,182 @@
             <li><a href="#contact">CONTACT</a></li>
         </ul>
     </nav>
-</body>
-
-    </header>
 
     <main>
-        <!-- Section: about -->
-        <section id="about" class="home-section color-dark bg-white">
-            <div class="container marginbot-20">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="animatedParent">
-                            <div class="section-heading text-center">
-                                <h2 class="h-bold">About Me</h2>
-                                <div class="divider-header"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
+        <!-- ======================
+             ABOUT
+        ====================== -->
+        <section id="about" class="section">
             <div class="container">
-                <div class="row">
-                    <div id="img-container" class="col-md-6 animatedParent">
-                        <img src="images/photo.png" alt="我的照片" class="img-responsive" id="img-me">
-                    </div>
-                    <div id="txt-my-pic" class="col-md-6 animatedParent text-left">
-                        <h6 id="my-name">Hsiang Yu Lin | Joe</h6>
-                        <p><strong>Data & Emerging Technology Consultant Intern based in Taipei, Taiwan</strong></p>
-                        <p id="tag">#Python #SQL #Tableau #Machine Learning #Explainable AI #NLP</p>
-                        <br>
-                        <p>I am pursuing a Master's degree in Accounting at National Taiwan University (NTU) with a passion for data analytics and consulting. With experience in various projects, 
-                          I have developed strong analytical skills and a keen interest in leveraging data to drive business insights and strategies. I am eager to apply my knowledge and skills in a dynamic environment, contributing to impactful projects and continuous learning.</p>
-                        <p>I am currently working as a Data & Emerging Technology Consultant Intern at EY.</p>
+                <h2 class="section-title">About Me</h2>
+
+                <div class="about-wrapper">
+                    <img src="images/photo.png" alt="我的照片" class="about-photo">
+
+                    <div class="about-text">
+                        <h3 class="name">Hsiang Yu Lin | Joe</h3>
+                        <p class="subtitle"><strong>A graduate student based in Taipei</strong></p>
+                        <p class="tags">#Python #SQL #Tableau #Machine Learning #Explainable AI #NLP</p>
+
+                        <p>I am pursuing a Master's degree in Accounting at National Taiwan University (NTU) with a passion for data analytics and consulting. With experience in various projects, I have developed strong analytical skills and a keen interest in leveraging data to drive business insights and strategies.</p>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- /Section: about -->
 
-  <!-- Section: experience -->
-<section id="experience" class="home-section color-dark bg-light">
-  <div class="container marginbot-10">
-      <div class="row">
-          <div class="col-lg-8 col-lg-offset-2">
-              <div class="animatedParent">
-                  <div class="section-heading text-center">
-                      <h2 class="h-bold">Experience</h2>
-                      <div class="divider-header"></div>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div>
-  <div class="container">
-      <div class="row">
-          <div class="col-lg-10 col-lg-offset-1">
-              <!-- 教育經歷內容 -->
-              <h6 id='experience-title'>Education</h6>
-              <table class="table table-condensed table-hover">
-                <tr>
-                    <td>
-                        <b class='work-position'>Master of Accounting</b>
-                        <br><br>
-                        <b class='work-company'>National Taiwan University</b>
-                    </td>
-                    <td>
-                        <b class='work-city'>Taipei, Taiwan</b>
-                        <br><br>
-                        <b class='work-date'>02/2025 - Present</b>
-                    </td>
-                    <td>
-                        <ul>
-                            <p class="course-title"><b>Courses:</b></p>
-                            <p><b>Accounting and Analytics:</b></p>
-                            <p>
-                                • Seminar on Assurance Services and Corporate Governance (In Progress) • Seminar on
-                                Accounting Information Systems and Data Analytics (In Progress)
-                            </p>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                          <b class='work-position'>Bachelor of Accounting</b>
-                          <br><br>
-                          <b class='work-company'>National Taiwan University</b>
-                      </td>
-                      <td>
-                          <b class='work-city'>Taipei, Taiwan</b>
-                          <br><br>
-                          <b class='work-date'>09/2020- 01/2025</b>
-                      </td>
-                      <td>
-                          <ul>
-                              <p class="course-title"><b>Courses:</b></p>
-                              <p><b>Data and Business Analytics:</b></p>
-                              <p>
-                                  • Big Data Marketing • Big Data and Business Analytics • Programming for Business Computing
-                                  • Statistics • Business Intelligence and Data Analytics Capstone
-                              </p>
-                              <p><b>Finance:</b></p>
-                              <p>
-                                  • Accounting • Cost and Managerial Accounting • Financial Management • Investment
-                                  • Macroeconomics • Money and Banking
-                              </p>
-                          </ul>
-                      </td>
-                  </tr>
-              </table>
-              <br>
-              <!-- 工作經歷內容 -->
-              <h6 id='experience-title'>Work Experience</h6>
-              <table class="table table-condensed table-hover">
-                  <tbody>
-                    <td>
-                        <b class='work-position'>Data & Emerging Technology Consultant Intern</b>
-                        <br><br>
-                        <b class='work-company'>EY</b>
-                    </td>
-                    <td>
-                        <b class='work-city'>Taipei, Taiwan</b>
-                        <br><br>
-                        <b class='work-date'>09/2024 - Present</b>
-                    </td>
-                    <td>
-                        <ul>
-                            <li>
-                                Assisted data analytics projects by performing data preprocessing, developing machine learning models, and crafting strategic recommendations to address client needs effectively
-                            </li>
-                            <br>
-                            <li>
-                                Provided data-driven solutions to clients in the financial sector, including banking groups and insurance companies, enhancing decision-making and business strategies
-                            </li>
-                        </ul>
-                    </td>
-                    </tr>
-                      <tr>
-                          <td>
-                              <b class='work-position'>Data Center intern</b>
-                              <br><br>
-                              <b class='work-company'>President Securities Corp.</b>
-                          </td>
-                          <td>
-                              <b class='work-city'>Taipei, Taiwan</b>
-                              <br><br>
-                              <b class='work-date'>07/2024 - 08/2024</b>
-                          </td>
-                          <td>
-                              <ul>
-                                  <li>
-                                      Assisted in the management of a database for the company's data center, including data cleaning, data integration, and data visualization
-                                  </li>
-                                  <br>
-                                  <li>
-                                    Conducted data analysis to support various business decisions such as assisting with targeted customer
-                                    marketing campaigns                                    
-                                  </li>
-                              </ul>
-                          </td>
-                      </tr>
-                      <tr>
-                          <td>
-                              <b class='work-position'>Accounting Intern</b>
-                              <br><br>
-                              <b class='work-company'>Medtronic</b>
-                          </td>
-                          <td>
-                              <b class='work-city'>Taipei, Taiwan</b>
-                              <br><br>
-                              <b class='work-date'>09/2023 - 03/2024</b>
-                          </td>
-                          <td>
-                              <ul>
-                                  <li>
-                                      Assisted with the maintenance of employees expenses database and generate monthly analysis reports
-                                  </li>
-                                  <br>
-                                  <li>
-                                      Authored SOPs for different accounting processes such as IC loan interest management, BOA bill payment service, and remittance receipts
-                                  </li>
-                                  <br>
-                                  <li>
-                                      Supported ad-hoc projects or tasks such as verification of commission expense vouchers and filing documents
-                                  </li>
-                              </ul>
-                          </td>
-                      </tr>
-                      <tr>
-                          <td>
-                              <b class='work-position'>Strategic Planning Intern</b>
-                              <br><br>
-                              <b class='work-company'>O-bank</b>
-                          </td>
-                          <td>
-                              <b class='work-city'>Taipei, Taiwan</b>
-                              <br><br>
-                              <b class='work-date'>07/2023 - 08/2023</b>
-                          </td>
-                          <td>
-                              <ul>
-                                  <li>
-                                      Assisted with the research of global market including PEST analysis and strategic planning
-                                  </li>
-                                  <br>
-                                  <li>
-                                      Conducted an in-depth analysis and generated a comprehensive credit report for Advanced Wireless & Antenna INC., highlighting key financial metrics and risk factors
-                                  </li>
-                                  <br>
-                                  <li>
-                                      Studied in various fields of knowledge including ESG issues, data software application, and corporate banking
-                                  </li>
-                              </ul>
-                          </td>
-                      </tr>
-                  </tbody>
-              </table>
-              <br>
-              <!-- 課外活動內容 -->
-              <h6 id='experience-title'>Extracurricular Activities</h6>
-              <table class="table table-condensed table-hover">
-                  <tbody>
-                      <tr>
-                          <td>
-                              <b class='work-position'>Member</b>
-                              <br><br>
-                              <b class='work-company'>NTU DAC (Data Analytics Club)</b>
-                          </td>
-                          <td>
-                              <b class='work-city'>Taipei, Taiwan</b>
-                              <br><br>
-                              <b class='work-date'>09/2023 - 06/2024</b>
-                          </td>
-                          <td>
-                              <ul>
-                                  <li>
-                                      Participated in two enterprise collaboration projects and took various data analytics courses to enhance my data analytics skills
-                                  </li>
-                                  <br>
-                                  <li>
-                                      HI-MS Project and Junyi Academy Foundation Project member
-                                  </li>
-                              </ul>
-                          </td>
-                      </tr>
-                      <tr>
-                        <td>
-                            <b class='work-position'>ECM/GIR Member</b>
-                            <br><br>
-                            <b class='work-company'>TMBA</b>
-                        </td>
-                        <td>
-                            <b class='work-city'>Taipei, Taiwan</b>
-                            <br><br>
-                            <b class='work-date'>09/2022 - 06/2023</b>
-                        </td>
-                        <td>
-                            <ul>
-                                <li>
-                                  Prepared an industry research report, including valuation analysis and financial modeling
-                                </li>
-                                <br>
-                                <li>
-                                  Conducted global macroeconomic research and generated an investment portfolio for our clients in the asset allocation competition
-                                </li>
-                            </ul>
-                        </td>
-                    </tr>
-                    <tr>
-                      <td>
-                          <b class='work-position'>Department of Student Rights</b>
-                          <br><br>
-                          <b class='work-company'>NTU Student Association</b>
-                      </td>
-                      <td>
-                          <b class='work-city'>Taipei, Taiwan</b>
-                          <br><br>
-                          <b class='work-date'>10/2021 - 06/2022</b>
-                      </td>
-                      <td>
-                          <ul>
-                              <li>
-                                In charge of the investigation plan of the clubs in NTU
-                              </li>
-                              <br>
-                              <li>
-                                Wrote a report to illustrate the result of the investigation plan with my teammates
-                              </li>
-                          </ul>
-                      </td>
-                  </tr>
-                      <td>
-                          <b class='work-position'>Member</b>
-                          <br><br>
-                          <b class='work-company'>NTU World Volunteer Society</b>
-                      </td>
-                      <td>
-                          <b class='work-city'>Taipei, Taiwan</b>
-                          <br><br>
-                          <b class='work-date'>09/2020 - 02/2021</b>
-                      </td>
-                      <td>
-                          <ul>
-                              <li>
-                                Planned a camp for the local children in Hualien and led one of the teams to finish different lesson plan efficiently
-                              </li>
-                              <br>
-                              <li>
-                                In charge of the lesson plan of marketing and explained the concept to local
-                              children
-                              </li>
-                          </ul>
-                      </td>
-                  </tr>
-                  </tbody>
-              </table>
-              <br>
-          </div>
-      </div>
-  </div>
-</section>
-<!-- /Section: experience -->
+        <!-- ======================
+             EXPERIENCE
+        ====================== -->
+        <section id="experience" class="section bg-light">
+            <div class="container">
+                <h2 class="section-title">Experience</h2>
 
- 
+                <!-- Education -->
+                <h3 class="category-title">Education</h3>
+                <div class="card-list">
 
-  <!-- Section: projects -->
-<section id="projects" class="home-section color-dark bg-white">
-  <div class="container marginbot-10">
-      <div class="row">
-          <div class="col-lg-8 col-lg-offset-2">
-              <div class="animatedParent">
-                  <div class="section-heading text-center">
-                      <h2 class="h-bold">My Projects</h2>
-                      <div class="divider-header"></div>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div>
-  <div class="container">
-      <div class="row">
-          <div class="col-lg-10 col-lg-offset-1">
-              <table class="table table-hover">
-                  <thead>
-                      <tr>
-                          <th>Project Name</th>
-                          <th>Description</th>
-                          <!-- <th>Skillset</th> -->
-                          <th>Link</th>
-                          <th>Last Update</th>
-                      </tr>
-                  </thead>
-                  <tbody>
-                      <tr>
-                          <td><a class="project-name" href="Document/EY Consulting Project.pdf" target="_blank">EY Consulting Project</a></td>
-                          <td>Developed RFM (Recency, Frequency, Monetary) and ML models to segment customers 
-                            and provide tailored business solutions to clients
-                          </td>
-                          <td><a class="project-link underline-dashed" href="Document/EY Consulting Project.pdf" target="_blank">PDF</a></td>
-                          <td>Jun. 2024</td>
-                      </tr>
-                      <tr>
-                        <td><a class="project-name" href="Document/和雲行動服務 x NTU DAC G5 期末報告.pdf" target="_blank">DAC HI-MS Project</a></td>
-                        <td>Identified and evaluated key variables affecting parking lot revenue by creating ML models and 
-                          created visual dashboards to present the results of the parking lot revenue prediction models, providing intuitive data analysis and improving business insights.
-                        </td>
-                        <td><a class="project-link underline-dashed" href="Document/和雲行動服務 x NTU DAC G5 期末報告.pdf" target="_blank">PDF</a></td>
-                        <td>May. 2024</td>
-                    </tr>
-                      <tr>
-                          <td><a class="project-name" href="Document/新聞與社群文章在金融市場的應用.pdf" target="_blank">NLP-Driven Stock Market Forecasting Project</a></td>
-                          <td>Employed NLP techniques to tokenize social media posts and build predictive models for stock market trends</td>
-                          <td><a class="project-link underline-dashed" href="Document/新聞與社群文章在金融市場的應用.pdf" target="_blank">PDF</a></td>
-                          <td>Apr. 2024</td>
-                      </tr>
-                      <tr>
-                          <td><a class="project-name" href="Document/均一期末報告.pdf" target="_blank">Junyi Academy Foundation Project</a></td>
-                          <td>Designed measurable indicators to explain the definition of a great question and proposed strategic suggestions to our clients</td>
-                          <td><a class="project-link underline-dashed" href="Document/均一期末報告.pdf" target="_blank">PDF</a></td>
-                          <td>Dec. 2023</td>
-                      </tr>
-                      <tr>
-                        <td><a class="project-name" href="Document/資產配置競賽簡報.pdf" target="_blank">Asset Management Competition Project</a></td>
-                        <td>Conducted global macroeconomic and industry research, and developed an investment portfolio for clients in the asset allocation competition</td>
-                        <td><a class="project-link underline-dashed" href="Document/資產配置競賽簡報.pdf" target="_blank">PDF</a></td>
-                        <td>Jun. 2023</td>
-                    </tr>
-                  </tbody>
-              </table>
-          </div>
-      </div>
-  </div>
-</section>
+                    <div class="card">
+                        <h4>Master of Accounting</h4>
+                        <p class="org">National Taiwan University ・ Taipei</p>
+                        <p class="date">02/2025 - Present</p>
+                        <p><strong>Courses:</strong> Seminar on Assurance Services and Corporate Governance, AIS & Data Analytics</p>
+                    </div>
 
-
-        <!-- Section: contact -->
-        <section id="contact" class="home-section color-dark bg-white">
-            <div class="container marginbot-10">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="animatedParent">
-                            <div class="section-heading text-center">
-                                <h2 class="h-bold">Contact</h2>
-                                <div class="divider-header"></div>
-                            </div>
-                        </div>
+                    <div class="card">
+                        <h4>Bachelor of Accounting</h4>
+                        <p class="org">National Taiwan University ・ Taipei</p>
+                        <p class="date">09/2020 - 01/2025</p>
+                        <p><strong>Courses:</strong> Big Data Marketing, Business Analytics, Programming for Business Computing</p>
                     </div>
                 </div>
+
+                <!-- Work -->
+                <h3 class="category-title">Work Experience</h3>
+                <div class="card-list">
+
+                    <div class="card">
+                        <h4>Accounting Information System Intern</h4>
+                        <p class="org">TSMC ・ Hsinchu</p>
+                        <p class="date">07/2025 - 08/2025</p>
+                        <ul>
+                            <li>Developed and optimized AI-powered invoice recognition system, improving accuracy and efficiency in
+                                financial document processing</li>
+                            <li>Conducted research on Agentic AI applications, exploring frameworks to enhance automation, reasoning, and
+                                decision-making capabilities in enterprise use cases</li>
+                        </ul>
+                    </div>
+
+                    <div class="card">
+                        <h4>Data & Emerging Technology Consultant Intern</h4>
+                        <p class="org">EY ・ Taipei</p>
+                        <p class="date">09/2024 - 06/2025</p>
+                        <ul>
+                            <li>Performed data preprocessing and ML modeling</li>
+                            <li>Delivered data-driven insights to financial-sector clients</li>
+                        </ul>
+                    </div>
+
+                    <div class="card">
+                        <h4>Data Center Intern</h4>
+                        <p class="org">President Securities Corp. ・ Taipei</p>
+                        <p class="date">07/2024 - 08/2024</p>
+                        <ul>
+                            <li>Managed databases and cleaned large financial datasets</li>
+                            <li>Supported data-driven marketing analyses</li>
+                        </ul>
+                    </div>
+
+                    <div class="card">
+                        <h4>Accounting Intern</h4>
+                        <p class="org">Medtronic ・ Taipei</p>
+                        <p class="date">09/2023 - 03/2024</p>
+                        <ul>
+                            <li>Maintained expense database and created monthly reports</li>
+                            <li>Authored SOPs for accounting workflows</li>
+                        </ul>
+                    </div>
+
+                    <div class="card">
+                        <h4>Strategic Planning Intern</h4>
+                        <p class="org">O-bank ・ Taipei</p>
+                        <p class="date">07/2023 - 08/2023</p>
+                        <ul>
+                            <li>Conducted PEST and global market analysis</li>
+                            <li>Prepared credit analysis report for AWI</li>
+                        </ul>
+                    </div>
+
+                </div>
             </div>
+        </section>
+
+        <!-- ======================
+             PROJECTS
+        ====================== -->
+        <section id="projects" class="section">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-10 col-lg-offset-1">
-                        <!-- 聯絡資訊內容 -->
-                        <div class="container">
-                            <div class="row" id='contact-padding'>
+                <h2 class="section-title">My Projects</h2>
 
-                            </div>
-                              <div class="col-md-7 col-md-offset-1 animatedParent">
-                                <div class="text-left">
-                                    <h6 id='my-name'><i class="fas fa-user"></i> Hsiang Yu Lin | Joe</h6>
-                                    <p><i class="fas fa-map-marker-alt"></i> Based in Taipei, Taiwan</p>
-                                    <p><i class="fas fa-briefcase"></i> Data Center Intern @ President Securities Corp. | Bachelor student in Accounting in National Taiwan University</p>
-                                    <p class='contact-info'><i class="fas fa-envelope"></i> E-mail: <a href="mailto:xiangjoe910330@gmail.com" id='email' class='contact-info'>xiangjoe910330@gmail.com</a></p>
-                                    <p class='contact-info'><i class="fas fa-phone"></i> Phone: <a href="tel:+886906418075" id='phone' class='contact-info'>+886 906-418-075</a></p>
-                                    <p class='contact-info'><i class="fab fa-linkedin"></i> LinkedIn: <a href="https://www.linkedin.com/in/1a049a252" id='linkedin' class='contact-info'>Hsiang Yu Lin | Joe</a></p>
-                                    <p class='contact-info'><i class="fab fa-github"></i> GitHub: <a href="https://github.com/Joelin0103" id='github' class='contact-info'>Joelin0103</a></p>
-                                </div>
-                                    <br>
-                                    <p id='cv-download'> Download my CV in PDF here: <a href="Document/CV.pdf" class='underline-dashed' target="_blank" id='cv-download-link'>English</a>
-                                        <br>
-                                        <small><i id="cv-update-date"> Last updated: Jul. 2024    
-                              </div>
-                            </div>
-                          </div>
-                        
-                          </div>
-                          </div>
-                        </section>
-                        <!-- /Section: contact -->
-            <!-- 回到頂部按鈕 -->
-    <button onclick="topFunction()" id="backToTopBtn" title="Go to top">Back to Top</button>
+                <div class="card-list">
 
-    <script src="script.js"></script>
+                    <div class="card">
+                        <h4>EY Consulting Project</h4>
+                        <p>Developed RFM and ML models for customer segmentation.</p>
+                        <a href="Document/EY Consulting Project.pdf" class="btn">View PDF</a>
+                        <p class="update">Updated: Jun. 2024</p>
+                    </div>
+
+                    <div class="card">
+                        <h4>DAC HI-MS Project</h4>
+                        <p>Identified key ML variables for parking revenue prediction.</p>
+                        <a href="Document/和雲行動服務 x NTU DAC G5 期末報告.pdf" class="btn">View PDF</a>
+                        <p class="update">Updated: May. 2024</p>
+                    </div>
+
+                    <div class="card">
+                        <h4>NLP Stock Market Project</h4>
+                        <p>Applied NLP on social media text to predict financial sentiment.</p>
+                        <a href="Document/新聞與社群文章在金融市場的應用.pdf" class="btn">View PDF</a>
+                        <p class="update">Updated: Apr. 2024</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================
+             CONTACT
+        ====================== -->
+        <section id="contact" class="section bg-light">
+            <div class="container">
+                <h2 class="section-title">Contact</h2>
+
+                <div class="contact-box">
+                    <p><i class="fas fa-user"></i> Hsiang Yu Lin | Joe</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Based in Taipei</p>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:xiangjoe910330@gmail.com">xiangjoe910330@gmail.com</a></p>
+                    <p><i class="fas fa-phone"></i> <a href="tel:+886906418075">+886 906-418-075</a></p>
+                    <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/1a049a252">LinkedIn</a></p>
+                    <p><i class="fab fa-github"></i> <a href="https://github.com/Joelin0103">GitHub</a></p>
+
+                    <p class="cv">Download CV: <a href="Document/CV.pdf" target="_blank">English</a></p>
+                </div>
+
+            </div>
+        </section>
+
     </main>
 
+    <!-- Back to Top Button -->
+    <button id="backToTopBtn" title="Go to top">Back to Top</button>
+
     <footer>
-        <p>&copy; 2024 我的網站. 版權所有.</p>
+        <p>© 2024 Joe | All rights reserved.</p>
     </footer>
+
+    <!-- Load Back to Top script -->
+    <script src="script.js"></script>
 </body>
 </html>
+
