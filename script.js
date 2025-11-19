@@ -1,16 +1,21 @@
-// 當用戶滾動超過 20px 時顯示按鈕
-window.onscroll = function() {scrollFunction()};
+// ===== Back to Top Button =====
 
-function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        document.getElementById("backToTopBtn").style.display = "block";
+// 取得按鈕
+let backToTopBtn = document.getElementById("backToTopBtn");
+
+// 捲動時判斷是否顯示按鈕
+window.addEventListener("scroll", function () {
+    if (document.documentElement.scrollTop > 300) {
+        backToTopBtn.style.display = "block";
     } else {
-        document.getElementById("backToTopBtn").style.display = "none";
+        backToTopBtn.style.display = "none";
     }
-}
+});
 
-// 點擊按鈕滾動回頂部
-function topFunction() {
-    document.body.scrollTop = 0; // For Safari
-    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-}
+// 點擊按鈕 → 平滑回頂端
+backToTopBtn.addEventListener("click", function () {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+});
